@@ -6,10 +6,13 @@
     <title>Instagram</title>
 
     <link rel="stylesheet" href="instagram1.css">
+    <link rel="stylesheet" href="login.css">
     
 
     <!-- ================ font awarsame ====================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=drag_handle" />
 </head>
 <body>
 
@@ -20,17 +23,55 @@
         </nav>
     </section> -->
 
-    <!-- ============================      ===========================-->
-     <section class="second-screen">
+    <section class="account-login">
+        <div class="flex">
+            <div class="logo">
+                <div class="white-button"><i class="fa-solid fa-circle-half-stroke"></i></div>
+                <div class="exit"><i class="fa-solid fa-arrow-right-from-bracket"></i></div>
+            </div>
+            <div class="logo1">instagram</div>
+            <div class="input">
+                <input type="text" placeholder="Phone number, username or email" class="text wrongi">
+                <div class="password wrong">
+                    <input type="password" placeholder="Password">
+                    <i class="fa-regular fa-eye-slash"></i>
+                </div>
+            </div>
+            <div class="forgot"><a href="" class="forgot1">Forget password</a></div>
+            <div class="login-in">
+                <button class="login-in1">Login in</button>
+                <p class="or">OR</p>
+                <a href="" class="facebook">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    Continue as Carlos Bravo Guardiola
+                </a>
+            </div>
+            <div class="footer1">
+                <p>Don't have account? <a href="" class="sign-up">Sign Up.</a></p>
+            </div>
+        </div>
+    </section>
 
+    <!-- ============================      ===========================-->
+     <section class="second-screen hide">
+
+        <!-- ============================ Home ===========================-->
         <div class="first-number">
             <header class="container flex">
                 <div class="plus"><i class="fa-solid fa-plus plus1"></i></div>
                 <div class="logo1">instagram
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
-                <div class="heart"><i class="fa-regular fa-heart heart1"></i></div>
+                <div class="heart">
+                    <a class="white-button">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </a>
+                    <a class="heart-button">
+                        <i class="fa-regular fa-heart heart1"></i>
+                    </a>
+                </div>
             </header>
+
             <div class="following hide">
                 <div class="followed">
                     <button class="following-1 same1">
@@ -41,6 +82,7 @@
                     </button>
                 </div>
             </div>
+
             
             <section class="section-2">
                 <div class="image-des-sqaure">
@@ -59,7 +101,7 @@
             <section class="box-2"></section>
         </div>
 
-
+        <!-- ============================ reels ===========================-->
         <div class="second-number hide">
             <div class="reels1">
                 <video src="video/Video-2.mp4" controls autoplay muted loop></video>
@@ -84,11 +126,12 @@
             </div>
         </div>
 
-
+        <!-- ============================  messages ===========================-->
         <div class="third-number hide">
             <a href="/">a</a>
         </div>
 
+        <!-- ============================ search ===========================-->
         <div class="four-number hide">
             <div class="a">
                 <div class="search">
@@ -100,91 +143,107 @@
             <div class="video-full" id="video-full"></div>
         </div>
 
+        <!-- ============================ accounts-own ===========================-->
         <div class="five-number hide">
             <a href="/">r</a>
         </div>
 
-        <footer class="footer">
-            <button class="home same"><i class="fa-regular fa-house"></i></button>
-            <button class="reels same"><i class="fa-solid fa-clapperboard"></i></button>
-            <button class="message same"><i class="fa-regular fa-message"></i></button>
-            <button class="search1 same"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button class="account same"><i class="fa-regular fa-circle-user"></i></button>
+        <!-- ============================ footer-last ===========================-->
+        <footer class="footer white">
+            <a class="home same"><i class="fa-regular fa-house"></i></a>
+            <a class="reels same"><i class="fa-solid fa-clapperboard"></i></a>
+            <a class="message same"><i class="fa-regular fa-paper-plane"></i></i></a>
+            <a class="search1 same"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a class="account same"><i class="fa-regular fa-circle-user"></i></a>
         </footer>
      </section>
 
-
-    <!-- ============================      ===========================-->
-    <!-- <div class="second-screen" id="hide">
-        <header>
-            <div class="container flex">
-                <div class="plus"><i class="fa-solid fa-plus plus1"></i></div>
-                <div class="logo1">instagram</div>
-                <div class="heart"><i class="fa-regular fa-heart heart1"></i></div>
+    <!-- ============================ notifications ===========================-->
+    <section class="notifications hide">
+        <header class="notifi-header flex">
+            <div class="left-notifi">
+                <a class="back-button">
+                    <i class="fa-solid fa-arrow-left back"></i>
+                </a>
+                <h3>Notifications</h3>
             </div>
+            <i class="fa-solid fa-circle-user user"></i>
         </header>
 
-        <section class="section-2 flex">
-            <div class="image-des-sqaure foxed">
-                <div class="image-circle">
-                    <img src="img/face1.jpg" class="image-photo">
-                    <div class="add-plus">
-                        <i class="fa-solid fa-plus"></i>
+        <section class="requests">
+            <div class="follow-req">
+                <div class="box-99">
+                    <div class="img-id">
+                        <img src="img/face2.jpg">
+                        <div class="id">
+                            <h3>Follow requests</h3>
+                            <p>sh_story_</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="box-99">
+                    <div class="img-id">
+                        <i class="fa-regular fa-circle-check check"></i>
+                        <div class="id">
+                            <h3>Follow requests</h3>
+                            <p>sh_story_</p>
+                        </div>
                     </div>
                 </div>
-                <p class="id-name">omakr kutakoli</p>
             </div>
-            <div class="box-1" id="container"></div>
-        </section>
 
-        <section class="section-3">
-            <div class="box-2"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
+    </section>
 
-        <footer class="footer">
-            <div class="by"><i class="fa-regular fa-house by1"></i></div>
-            <div class="by"><span class="material-symbols-outlined by2">video_template</span></div>
-            <div class="by"><i class="fa-regular fa-message by1"></i></div>
-            <div class="by"><i class="fa-solid fa-magnifying-glass by1"></i></div>
-            <div class="by"><i class="fa-regular fa-circle-user by1"></i></div>
-        </footer>
+    <div class="about-down hide">
+        <div class="abs white1">
+            <a class="user1">
+                <i class="fa-solid fa-minus minus"></i>
+            </a>
+            <div class="about-this">
+                <a class="about-account same2">
+                    <i class="fa-solid fa-circle-user user"></i>
+                    <p>About this account</p>
+                </a>
+                <a class="about-ad same2">
+                    <p>About this ad</p>
+                </a>
+                <a class="why-seeing same2">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p>why you're seeing this ad</p>
+                </a>
+                <a class="about-ins-ads same2">
+                    <p>About Instagram Ads</p>
+                </a>
+            </div>
+            <div class="interesteed">
+                <a class="same2">
+                    <i class="fa-solid fa-check"></i>
+                    <p>Interested</p>
+                </a>
+                <a class="same2">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    <p>Not interested</p>
+                </a>
+                <a class="same2">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Repeat Ad</p>
+                </a>
+            </div>
+        </div>
     </div>
 
-
-   
-    <div class="third-screen">
-        <div class="reels">
-            <video src="video/Video-2.mp4" controls autoplay></video>
-            <i class="fa-solid fa-arrow-left back"></i>
-
-            <div class="left-id">
-                <div class="up">
-                    <img src="img/face11.jpg">
-                    <h5>omakr kutakoli</h5>
-                </div>
-                <div class="down-describe">
-                    <p>like:</p>
-                </div>
-            </div>
-
-            <div class="right-like">
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-message"></i>
-                <i class="fa-solid fa-share"></i>
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="by"><i class="fa-regular fa-house by1"></i></div>
-            <div class="by"><span class="material-symbols-outlined by2">video_template</span></div>
-            <div class="by"><i class="fa-regular fa-message by1"></i></div>
-            <div class="by"><i class="fa-solid fa-magnifying-glass by1"></i></div>
-            <div class="by"><i class="fa-regular fa-circle-user by1"></i></div>
-        </div>
-    </div> -->
     
     <script src="id.js" defer></script>
+    <script src="logo.js" defer></script>
     <script src="instrgram1.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.rock {
+    position: relative;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+    margin: 10px;
+}
+
+
+.own {
+    display: flex;
+    flex-direction: column;
+}
+
+

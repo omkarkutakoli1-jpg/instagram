@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgba(68, 159, 250, 0.5);
+}
+
+.main  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parr {
+    font-size: 60px;
+    margin: 0 0 50px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.decrement {
+    background-color: rgb(246, 48, 48);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px 10px;
+}
+
+.rest {
+    background-color: rgb(51, 18, 237);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px 10px;
+}
+
+.increament {
+    background-color: rgb(24, 176, 8);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px 10px;
+}

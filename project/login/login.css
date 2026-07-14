@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Akt", sans-serif;
+    background-color: black;
+    text-align: center;
+}
+
+.screen {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    height: 100vh;
+    width: 450px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+h1 {
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.input_icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 9px 0;
+    width: 300px;
+    border-radius: 10px;
+    border-radius: 8px;
+}
+
+.input_icon input {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color:rgba(182, 117, 243, 0.2);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input_icon input:hover {
+    border: 1px solid rgb(53, 53, 53);
+}
+
+.input_icon input:focus {
+    border: 1px solid rgb(53, 53, 53);
+}
+
+div:has(input:focus) > i {
+    background-color: rgb(53, 53, 53);
+}
+
+.input_icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(158, 76, 235, 0.7);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    color: white;
+}
+
+.login {
+    position: relative;
+    margin: 5px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(158, 76, 235, 0.7);
+}
+
+p {
+    margin: 25px 0 0 0;
+    color: rgb(75, 75, 75);
+}
+
+.create {
+    color: rgba(158, 76, 235, 0.7);
+    cursor: pointer;
+}

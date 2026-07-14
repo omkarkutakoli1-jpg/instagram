@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <link rel="stylesheet" href="loading.css">
+</head>
+<body>
+
+    <div class="center">
+        <div class="progress-bar">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    
+    <script>
+        // var i = 0;
+        // let blocks = document.querySelector('.block');
+
+        // const interval = setInterval(() => {
+        //     if(i == blocks.length) {
+        //         i = 0;
+        //         blocks.forEach((block) => {
+        //             block.style.background = "transparent";
+        //         });
+        //     } else {
+        //         blocks[i].style.background = "rga(255,255,0)";
+        //         i=i + 1;
+        //     }
+        // }, 250);
+
+        var i = 0;
+        let blocks = document.querySelectorAll(".block");
+        const interval = setInterval(() => {
+            if (i == blocks.length) {
+            i = 0;
+            blocks.forEach((block) => {
+                block.style.background = "transparent";
+            });
+            } else {
+            blocks[i].style.background = "rgb(255,255,0)";
+            i = i + 1;
+            }
+        }, 250);
+    </script>
+</body>
+</html>

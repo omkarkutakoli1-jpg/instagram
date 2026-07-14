@@ -1,0 +1,103 @@
+ @import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    min-height: 100vh;
+    background: linear-gradient(30deg, rgb(255, 0, 0)10%, rgb(171, 6, 130)50%, rgb(0, 0, 255)100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "Akt", sans-serif;
+    
+}
+
+.container {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 2em;
+    border-radius: 10px;
+    width: 30%;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+}
+
+hr {
+    color: white;
+}
+
+.time {
+    font-size: 5em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.same {
+    border: none;
+    margin: 0 10px 0 0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#start {
+    background-color:  rgba(0, 255, 0, .8);
+}
+
+#stop {
+    background-color:  rgba(255, 0, 0, .8);
+}
+
+#rest {
+    background-color:  rgba(0, 0, 255, .8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="pomodoro_timer.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+
+        <hr>
+
+        <p class="timer" id="timer">25:00</p>
+
+        <div class="button">
+            <button class="same" id="start">Start</button>
+            <button class="same" id="stop">Stop</button>
+            <button class="same" id="rest">Reset</button>
+        </div>
+    </div>
+    
+    <script src="pomodoro_timer.js"></script>
+</body>
+</html> */

@@ -1,0 +1,154 @@
+
+
+:root {
+    --white-color: white;
+    --black-color: black;
+    --grey-color: rgb(92, 92, 92);
+    --blue-color: rgb(60, 105, 202);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: sans-serif;   
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    height: 100vh;
+}
+
+.section .container {
+    position: relative;
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 10000px black;
+}
+
+.container .blue {
+    position: relative;
+    background-color: var(--blue-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 4;
+}
+
+.container .blue .image {
+    position: relative;
+    top: 30px;
+    border-radius: 100%;
+    background-color: var(--blue-color);
+}
+
+.container .blue .image img {
+    border: 4px solid var(--white-color);
+    border-radius: 50%;
+    height: 100%;
+}
+
+.container .white {
+    position: relative;
+    background-color: white;
+    z-index: 0;
+    top: 45px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .white .username {
+    line-height: 30px;
+}
+
+.container .white .username .p1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.container .white .username .p2 {
+    font-weight: 400;
+    color: var(--grey-color);
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.container .white .clone {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .white .clone .same {
+    color: white;
+    border-radius: 100%;
+    padding: 8px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.container .white .clone .fackbook {
+    background-color: rgb(33, 64, 165);
+}
+
+.container .white .clone .twick {
+    background-color: rgb(0, 150, 250);
+}
+
+.container .white .clone .instram {
+    background-color: rgb(201, 4, 145);
+}
+
+.container .white .clone .youtube {
+    background-color: rgb(217, 8, 8);
+}
+
+.container .white .subscribe {
+    margin: 5px;
+}
+
+.container .white .subscribe .same1 {
+    background-color: var(--blue-color);
+    border: none;
+    padding: 13px 29px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.8px;
+    color: var(--white-color);
+    margin: 10px 6px;
+}
+
+.container .white .like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .white .like .love {
+    display: flex;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: var(--grey-color);
+    border-right: 2px solid rgb(213, 213, 213);
+}
+
+.container .white .like .o {
+    border-right: none;
+}
+
+
+.container .white .like .love p {
+    margin: 0 0 0 3px;
+}

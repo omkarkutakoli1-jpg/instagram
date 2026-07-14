@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(56, 56, 246, .6);
+    font-family: "Akt", sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 550px;
+}
+
+.header {
+    margin: 0 0 20px 0;
+}
+
+
+.describe {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.quote {
+    font-size: 17px;
+}
+
+.describe .left{
+    font-size: 15px;
+    margin: 3px 3px 0 0;
+
+}
+.describe .right {
+    display: flex;
+    align-items: flex-end;
+    font-size: 15px;
+    margin: 0 0 3px 3px;
+}
+
+.author1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 0 0 0;
+    height: 20px;
+    width: 90%;
+}
+
+.author1 .author {
+    position: absolute;
+    right: 0;
+}
+
+.hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(120, 120, 120);
+    border-radius: 100%;
+    margin: 20px 0;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.same {
+    margin-right: 10px;
+    border: 2px solid rgba(56, 56, 246, .6);
+    background: transparent;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: start;
+    font-size: 15px;
+    color: rgba(56, 56, 246, .6);
+}
+.same:hover {
+    color: rgba(90, 90, 254, 0.6);
+    border: 2px solid rgba(90, 90, 254, 0.6);
+}
+
+
+.new {
+    border: none;
+    background-color: rgba(56, 56, 246, .6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+}
+
+.new:hover {
+    background-color: rgba(90, 90, 254, 0.6);
+    
+}
