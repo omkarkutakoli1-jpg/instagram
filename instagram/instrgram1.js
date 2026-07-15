@@ -21,6 +21,7 @@ let footer = document.querySelector(".footer");
 let video_header = document.querySelector(".video-header");
 let abs_down = document.querySelector(".abs");
 let about_down = document.querySelector(".about-down");
+let white_buttons = document.querySelector(".white-buttons")
 
 
 let turn1 = true;
@@ -99,14 +100,18 @@ heart_button.addEventListener('click', ()=> {
     first_number.classList.add("hide");
 });
 
-white_screen.addEventListener('click', () => {
+white_screen.addEventListener('click', white);
+
+white_buttons.addEventListener('click', white)
+
+function white() {
     body.classList.toggle("dark");
     footer.classList.add("dark");
     footer.classList.toggle("white");
     abs_down.classList.add("dark");
     abs_down.classList.toggle("white1");
     notifications.classList.toggle("dark");
-})
+}
 
 
 
@@ -172,7 +177,7 @@ id.forEach(person => {
                                 <a>Follow</a>
                             </div>
                             <div class="menu2">
-                                <span class="material-symbols-outlined span">drag_handle</span>
+                                <i class="fa-solid fa-bars"></i>
                             </div>
                         </div>
                     </div>

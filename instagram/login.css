@@ -28,7 +28,10 @@ a {
 
 
 
-
+.wrong {
+    border: 2px solid rgba(255,0,0,0.15);
+    background-color: rgba(255,0,0,0.2);
+}
 
 
 .account-login .flex {
@@ -50,6 +53,7 @@ a {
     font-size: 25px;
     height: 60px; width: 100%;
     padding: 15px;
+    cursor: pointer;
 }
 
 
@@ -108,10 +112,10 @@ a {
     
 }
 
-.account-login .input .text:hover, .account-login .input .password:hover {
+/* .account-login .input .text:hover, .account-login .input .password:hover {
     border: 2px solid rgba(255,0,0,0.15);
     background-color: rgba(255,0,0,0.2);
-}
+} */
 
 
 .forgot {
